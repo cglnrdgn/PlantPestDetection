@@ -63,7 +63,7 @@ class ImageClassificationApp:
         model_file_name = f"{selected_model}_{selected_optimization}.h5"
 
         try:
-            base_path = "C://Users//cagla//OneDrive//Belgeler//MODELLER//lr_0.0001_bs_32_epochs_45_inception_optimizer_Adam//"
+            base_path = "C://Users//cagla//OneDrive//MODELLER//"
             model_path = os.path.join(base_path, model_file_name)
             self.loaded_model = tf.keras.models.load_model(model_path)
             print(f"Model for {selected_model} with {selected_optimization} optimization loaded successfully.")
